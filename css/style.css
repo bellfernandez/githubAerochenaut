@@ -539,6 +539,10 @@ section img {
   margin-top: 1rem;
 }
 
+.offcanvas-body .nav-link, .offcanvas-body .nav-link.active {
+    color:#acc8cb
+}
+
 /*MediaQ  para dispositivos moviles*/
 
 @media (max-width:500px){
