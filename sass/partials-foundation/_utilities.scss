@@ -11,15 +11,18 @@
 
 body {
   font-family: $font-principal;
-  background-color: $color-fondo;
+  background-color: $color-fondo-principal;
   color: $color-texto;
   line-height: 1.6;
+  margin: 20px;
 }
 
 .contenedor {
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
+  box-sizing: border-box;
+  max-width: auto;
 }
 
 .titulo {

@@ -6,13 +6,20 @@
 // Header
 // ------------------------------
 header {
-  background-color: $color-fondo1;
+  background-color: $color-terciario;
   padding: 1rem 2rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-family: $font-principal;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  img {
+    width: 50px;
+    margin: 8px;
+  }
+
 
   .logo {
     font-size: 1.8rem;
@@ -22,25 +29,38 @@ header {
   }
 
   nav {
+  width: 40%;
+  margin-right: 6px;
+  }
+
+  .menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 20px;
+
+  
     ul {
       list-style: none;
       display: flex;
       gap: 2rem;
 
-      li {
-        a {
-          text-decoration: none;
-          color: $color-verdoso;
-          font-weight: 600;
+      li { margin-left: 20px; 
+      }
+      
+      a { text-decoration: none;
+         color: $color-claro;
+          font-weight: bold;
           font-size: 1rem;
           transition: color 0.3s ease;
-
-          &:hover {
-            color: $color-verdoso2;
-          }
         }
-      }
-    }
+        
+        
+        &:hover {
+          color: $color-verdoso2;
+        }
+      }   
   }
 }
 
@@ -48,15 +68,16 @@ header {
 // Footer
 // ------------------------------
 footer {
-  background-color: $color-verdoso;
+  background-color: $color-terciario;
   padding: 2rem;
-  color: $color-texto;
+  color: $color-texto2;
   font-family: $font-principal;
   text-align: center;
 
   p {
     margin: 0;
     font-size: 1rem;
+    color: $color-texto2
   }
 
   a {
