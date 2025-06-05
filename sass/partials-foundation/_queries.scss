@@ -1,0 +1,364 @@
+// foundation/_queries.scss
+
+@mixin mobile{
+    @media (max-width:500px){
+    header {
+        flex-direction: column;
+         align-items: center;
+         padding: 10px 0;
+    }
+   
+    header img{
+         width: 40px;
+         margin: 4px;
+        }
+
+    nav {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .menu li {
+        margin-left: 0;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    .banner {
+      height: auto; /* deja que el contenido determine la altura */
+        padding: 30px 10px; /* espacio interno */
+        text-align: center;
+        font-size: 1.2rem; /* achica el texto */
+        line-height: 1.4;
+    }
+
+    .banner h1,
+    .banner p {
+        font-size: 1.3rem;
+        padding: 0 10px;
+
+    }
+
+    .contenedor-grid-vivencias {
+        grid-template-areas:
+            "titulo1"
+            "texto1"
+            "img-1"
+            "img-2"
+            "texto2"
+            "img-3"
+            "texto3";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .galeria1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .galeria1 .item1 {
+        width: 95%;
+    }
+
+    .destacadas article {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .primervuelo, .privado, .instructor {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    form {
+        padding: 1rem;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        font-size: 1rem;
+    }
+
+    .historia img,.fundador img,.frasefinal img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .instructores {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    
+    article img,
+    section img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tituloHistoria {
+        font-size: 2rem;
+    }
+
+    .titulocontacto {
+       
+        font-size: 1.8rem;
+    }
+
+    .frase p {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+
+}
+
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+  
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .banner {
+        height: auto;
+        padding: 40px 20px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .banner h1,
+    .banner p {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+
+    .contenedor-grid-vivencias {
+        grid-template-areas:
+            "titulo1 titulo1"
+            "texto1 img-1"
+            "img-2 img-1"
+            "texto2 texto3"
+            "img-3 img-3";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .galeria1 {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .galeria1 .item1 {
+        width: 45%;
+    }
+
+    .destacadas article {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .primervuelo,
+    .privado,
+    .instructor {
+        width: 85%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    form {
+        padding: 2rem;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .historia img,
+    .fundador img,
+    .frasefinal img {
+        width: 100%;
+        height: auto;
+    }
+
+    .instructores {
+        gap: 2rem;
+        align-items: center;
+    }
+
+    article img,
+    section img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tituloHistoria {
+        font-size: 2.5rem;
+    }
+
+    section h2, .titulocontacto {
+        font-size: 2rem;
+    }
+
+    .frase p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+   
+    header {
+        padding: 20px 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .banner {
+        height: 350px;
+        background-position: center;
+        padding: 60px;
+        font-size: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 2.8rem;
+    }
+
+    .contenedor-grid-vivencias {
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 50px 100px 300px 200px;
+        grid-template-areas: 
+            "titulo1 titulo1 titulo1"
+            "texto1 texto1 img-1"
+            "img-2 img-2 img-1"
+            "texto2 img-3 texto3";
+    }
+
+    .galeria1 {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .galeria1 .item1 {
+        width: 250px;
+    }
+
+    .destacadas article {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .primervuelo,
+    .privado,
+    .instructor {
+        width: 30%;
+        height: 450px;
+    }
+
+    iframe {
+        height: 350px;
+    }
+
+    form {
+        width: 700px;
+        padding: 2rem;
+    }
+
+    .historia img,
+    .fundador img,
+    .frasefinal img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .instructores {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    article img,
+    section img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tituloHistoria {
+        font-size: 3rem;
+    }
+
+    .titulocontacto {
+        font-size: 2.5rem;
+    }
+
+    .frase p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+

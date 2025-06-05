@@ -1,0 +1,61 @@
+//estilos para el header y el footer 
+
+@use 'variables' as *;
+
+header {
+  background-color: $color-terciario;
+  color: white;
+  padding: 1rem 0;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+  header img{
+    width: 50px;
+    margin: 8px;
+}
+
+  nav {
+       width: 40%;
+        margin-right: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .logo {
+      font-size: 1.5rem;
+    }
+    
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    
+    }
+
+    .menu {
+    list-style: none;
+    height: 20px;
+    flex-direction: row;
+    display: flex; /* Pone los items uno al lado del otro */
+    justify-content: flex-end; /* Mueve el menú a la derecha */
+    align-items:flex-start;
+}
+    .menu li {
+        margin-left: 20px; /* Espacio entre los items */
+    }
+    
+    .menu a {
+    text-decoration: none; /* Saca el subrayado de los links */
+    color: $color-claro; /* color del texto */
+    font-weight: bold;
+}
+  }
+}
+
+footer {
+  background-color: $color-terciario;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}

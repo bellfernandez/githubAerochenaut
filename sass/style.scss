@@ -1,0 +1,23 @@
+//IMPORTAR LAS HOJAS SECUNDARIAS- PARTIALS
+
+//Variables y utilidades Generales
+
+@use "partials-foundation/variables";
+@use 'partials-foundation/variables' as *;
+@use "partials-foundation/utilities"; 
+
+//Estructura Base
+
+@use "partials-foundation/header-footer";
+
+//diferentes paginas individuales
+
+@use "partials-pages/index";
+@use "partials-pages/escuela";
+@use "partials-pages/nosotros";
+@use "partials-pages/flota";
+@use "partials-pages/contacto"; 
+
+//media queries
+
+@use "partials-foundation/queries";

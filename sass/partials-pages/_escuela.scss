@@ -1,0 +1,55 @@
+
+// ------------------------------
+// Sección Escuela
+// ------------------------------
+
+@use '../partials-foundation/variables' as *;
+
+.escuela {
+  padding: 3rem 1.5rem;
+  background-color: $color-celeste;
+
+  h2 {
+    font-size: 2.5rem;
+    color: $color-azul;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contenido-escuela {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 450px;
+      width: 100%;
+      border-radius: $border-radius;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .texto {
+      flex: 1;
+      font-size: 1.1rem;
+      color: $color-texto;
+
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+
+      ul {
+        padding-left: 1.5rem;
+        list-style: disc;
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

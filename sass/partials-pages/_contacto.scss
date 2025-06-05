@@ -1,0 +1,72 @@
+// ------------------------------
+// Sección Contacto
+// ------------------------------
+
+@use '../partials-foundation/variables' as *;
+
+.contacto {
+  padding: 3rem 1.5rem;
+  background-color: $color-celeste2;
+
+  h2 {
+    font-size: 2.5rem;
+    color: $color-terciario2;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: $color-calido2;
+    padding: 2rem;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: $color-verdoso;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #b2dfdb;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-family: $font-principal;
+      color: $color-verdoso;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: $color-verdoso2;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: $color-verdoso2;
+      color: $color-calido2;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 0.75rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $color-verdoso;
+      }
+    }
+  }
+}

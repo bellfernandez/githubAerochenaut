@@ -1,0 +1,92 @@
+// pages/_index.scss
+
+@use '../partials-foundation/variables' as *;
+
+
+.banner {
+  background-color: $color-azul;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+}
+
+
+// ------------------------------
+// Sección de bienvenida
+// ------------------------------
+.bienvenida {
+  padding: 2rem;
+  text-align: center;
+  background-color: $color-avellana;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $color-azul;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+// ------------------------------
+// Galería de imágenes
+// ------------------------------
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+}
+
+// ------------------------------
+// Novedades o Noticias
+// ------------------------------
+.novedades {
+  background-color: $color-calido;
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+    color: $color-azul;
+    margin-bottom: 1.5rem;
+  }
+
+  .novedad {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      font-size: 1.3rem;
+      color: $color-texto;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $color-texto2;
+    }
+  }
+}
