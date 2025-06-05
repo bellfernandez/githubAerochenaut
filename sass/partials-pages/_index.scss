@@ -57,7 +57,7 @@ main {
 // BANNER
 // ----------------------
 .banner {
-  background-image: url("//medios/banner.jpg");
+  background-image: url(//medios/banner.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -67,7 +67,7 @@ main {
 
   .titulo-experiencia {
     margin: 10px 10px;
-    color: $color-claro;
+    color: $color-avellana;
   }
 }
 
