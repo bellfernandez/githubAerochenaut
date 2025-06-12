@@ -13,7 +13,7 @@ body {
 }
 
 .contenedor {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -102,12 +102,31 @@ h1, h2, h3, p {
   font-family: "Poppins", sans-serif;
 }
 
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
 .what {
   width: 150px;
   border-radius: 50px;
   position: fixed;
   bottom: 30px;
   right: 10px;
+  z-index: 1000;
+  animation: latido 1.8s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+.what img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.what:hover {
+  transform: scale(1.1);
 }
 
 main {
@@ -387,8 +406,8 @@ main section h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .mainnosotros .instructores article img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 30%;
 }
