@@ -6,8 +6,13 @@
       box-sizing: border-box;
     }
 
-    body {
+   html body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
       overflow-x: hidden;
+      font-size: 16px;
+
     }
 
     img {
@@ -16,10 +21,12 @@
       display: block;
     }
 
-    header {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
+    header  nav{
+     
+      width: 100%;
+      margin: 0;
+      padding: 0 10px;
+      box-sizing: border-box;
     }
 
     header img {
@@ -27,15 +34,10 @@
       margin: 4px;
     }
 
-    nav {
-      width: 100%;
-      margin: 0;
-    }
 
     .menu {
       flex-direction: column;
       align-items: center;
-      height: auto;
       gap: 10px;
       padding: 10px 0;
     }
@@ -73,7 +75,7 @@
         "texto3";
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      gap: 1rem;
+    
     }
 
     .galeria1 {
@@ -131,8 +133,8 @@
 
     article img,
     section img {
-      max-width: 100%;
-      height: auto;
+      width: 120px;
+      height: 120px;
     }
 
     .tituloHistoria {
