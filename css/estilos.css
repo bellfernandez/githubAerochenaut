@@ -102,14 +102,6 @@ h1, h2, h3, p {
   font-family: "Poppins", sans-serif;
 }
 
-@keyframes latido {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.15);
-  }
-}
 .what {
   width: 150px;
   border-radius: 50px;
@@ -124,9 +116,6 @@ h1, h2, h3, p {
   width: 100%;
   height: auto;
   display: block;
-}
-.what:hover {
-  transform: scale(1.1);
 }
 
 main {
