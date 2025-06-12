@@ -6,61 +6,91 @@
 
 @use '../partials-foundation/variables' as *;
 
-.nosotros {
-  background-color: $color-avellana;
-  padding: 3rem 1.5rem;
-  text-align: center;
+.mainnosotros {
+  max-width: auto;
+  margin: 0;
+  font-family: $font-principal;
+  color: $color-font-1;
+  background-color: $color-background;
 
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: $color-azul;
+  .tituloHistoria {
+    text-align: center;
+    font-size: 3rem;
+    color: $color-font-1;
+    margin-bottom: 1rem;
   }
 
-  p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: $color-texto3;
+  section {
+    margin-bottom: 3rem;
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
   }
-}
 
-// ------------------------------
-// información adicional
-// ------------------------------
-.equipo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-
-  .miembro {
-    background-color: white;
-    border-radius: $border-radius;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    max-width: 300px;
+  .historia, .fundador, .frasefinal {
     text-align: center;
 
     img {
       width: 100%;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-      color: $color-azul;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-      color: $color-texto2;
+      max-width: 600px;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: $border-radius;
+      box-shadow: $sombra;
     }
   }
 
-  
+  .instructores {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: center;
+    border-radius: $border-radius;
+    box-shadow: $sombra;
+
+    article {
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30%;
+      }
+    }
+
+    .instructorinfo {
+      h3, p {
+        color: black;
+        margin: 0;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .frasefinal {
+    p {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: $color-contenedor;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// Link del menú en offcanvas
+.offcanvas-body {
+  .nav-link,
+  .nav-link.active {
+    color: $color-font-1;
+  }
 }

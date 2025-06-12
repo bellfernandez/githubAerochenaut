@@ -1,142 +1,155 @@
 // foundation/_queries.scss
+@mixin mobile {
+  @media (max-width: 500px) {
 
-@mixin mobile{
-    @media (max-width:500px){
-    header {
-        flex-direction: column;
-         align-items: center;
-         padding: 10px 0;
+    * {
+      box-sizing: border-box;
     }
-   
-    header img{
-         width: 40px;
-         margin: 4px;
-        }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    header img {
+      width: 40px;
+      margin: 4px;
+    }
 
     nav {
-        width: 100%;
-        margin: 0;
+      width: 100%;
+      margin: 0;
     }
 
-
     .menu {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        gap: 10px;
-        padding: 10px 0;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      gap: 10px;
+      padding: 10px 0;
     }
 
     .menu li {
-        margin-left: 0;
+      margin-left: 0;
     }
 
     main section {
-        padding: 1rem;
+      padding: 1rem 0.5rem;
     }
 
     .banner {
-      height: auto; /* deja que el contenido determine la altura */
-        padding: 30px 10px; /* espacio interno */
-        text-align: center;
-        font-size: 1.2rem; /* achica el texto */
-        line-height: 1.4;
+      height: auto;
+      padding: 30px 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.4;
     }
 
     .banner h1,
     .banner p {
-        font-size: 1.3rem;
-        padding: 0 10px;
-
+      font-size: 1.3rem;
+      padding: 0 10px;
     }
 
     .contenedor-grid-vivencias {
-        grid-template-areas:
-            "titulo1"
-            "texto1"
-            "img-1"
-            "img-2"
-            "texto2"
-            "img-3"
-            "texto3";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+      grid-template-areas:
+        "titulo1"
+        "texto1"
+        "img-1"
+        "img-2"
+        "texto2"
+        "img-3"
+        "texto3";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
     }
 
     .galeria1 {
-        flex-direction: column;
-        gap: 15px;
+      flex-direction: column;
+      gap: 15px;
     }
 
     .galeria1 .item1 {
-        width: 95%;
+      width: 95%;
     }
 
     .destacadas article {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
-    .primervuelo, .privado, .instructor {
-        width: 90%;
-        height: auto;
-        padding: 1rem;
+    .primervuelo,
+    .privado,
+    .instructor {
+      width: 90%;
+      height: auto;
+      padding: 1rem;
     }
 
     iframe {
-        width: 100%;
-        height: 250px;
+      width: 100%;
+      height: 250px;
     }
 
     form {
-        padding: 1rem;
-        width: 100%;
-        font-size: 0.9rem;
+      padding: 1rem;
+      width: 100%;
+      font-size: 0.9rem;
     }
 
     form input,
     form textarea,
     form select {
-        font-size: 1rem;
+      font-size: 1rem;
     }
 
-    .historia img,.fundador img,.frasefinal img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
+    .historia img,
+    .fundador img,
+    .frasefinal img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
 
     .instructores {
-        align-items: center;
-        gap: 1rem;
+      align-items: center;
+      gap: 1rem;
     }
 
-    
     article img,
     section img {
-        width: 120px;
-        height: 120px;
+      max-width: 100%;
+      height: auto;
     }
 
     .tituloHistoria {
-        font-size: 2rem;
+      font-size: 2rem;
     }
 
     .titulocontacto {
-       
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
 
     .frase p {
-        font-size: 0.95rem;
-        text-align: justify;
+      font-size: 0.95rem;
+      text-align: justify;
     }
-
-
+  }
 }
 
-}
 
 @mixin tablet {
   @media (min-width: 501px) and (max-width: 1024px) {

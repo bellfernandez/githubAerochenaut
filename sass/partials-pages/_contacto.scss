@@ -6,11 +6,11 @@
 
 .contacto {
   padding: 3rem 1.5rem;
-  background-color: $color-celeste2;
+  background-color: $color-background;
 
   h2 {
     font-size: 2.5rem;
-    color: $color-terciario2;
+    color: $color-font-1;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -18,7 +18,7 @@
   form {
     max-width: 600px;
     margin: 0 auto;
-    background: $color-calido2;
+    background: $font-claro;
     padding: 2rem;
     border-radius: $border-radius;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@
       display: block;
       margin-bottom: 0.5rem;
       font-weight: 600;
-      color: $color-verdoso;
+      color: $color-contenedor;
     }
 
     input,
@@ -39,12 +39,12 @@
       border-radius: 0.5rem;
       font-size: 1rem;
       font-family: $font-principal;
-      color: $color-verdoso;
+      color: $color-contenedor;
       transition: border-color 0.3s ease;
 
       &:focus {
         outline: none;
-        border-color: $color-verdoso2;
+        border-color: $color-contenedor;
       }
     }
 
@@ -54,8 +54,8 @@
     }
 
     button {
-      background-color: $color-verdoso2;
-      color: $color-calido2;
+      background-color: $color-font-2;
+      color: $color-font-1;
       padding: 0.75rem 2rem;
       border: none;
       border-radius: 0.75rem;
@@ -65,7 +65,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: $color-verdoso;
+        background-color: $color-contenedor;
       }
     }
   }

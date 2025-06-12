@@ -8,9 +8,9 @@
  /*#98D2C0 acqua marine*/
 
 /*font*/
-/*
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*font-family: "Poppins", sans-serif;
+/*font-family: "Poppins", sans-serif;*/
 
 *{
     margin: 0 0;
@@ -22,7 +22,6 @@
 }
 /* Selector de etiqueta */
 /*color de fondo*/
-/*
 
 header {
     background-color:#01101b;
@@ -50,28 +49,28 @@ footer{
     height: 20px;
     flex-direction: row;
     display: flex; /* Pone los items uno al lado del otro */
-    /*justify-content: flex-end; 
+    justify-content: flex-end; /* Mueve el menú a la derecha */
     align-items:flex-start;
 }
 
-/*.menu li {
-    margin-left: 20px; 
+.menu li {
+    margin-left: 20px; /* Espacio entre los items */
 }
 
 .menu a {
-    text-decoration: none; 
-    color: #98D2C0; 
+    text-decoration: none; /* Saca el subrayado de los links */
+    color: #98D2C0; /* color del texto */
     font-weight: bold;
 }
 
-/*main{
+main{
     background-color:#13202a ;
-}*/
+}
 
 
 /* Main de index */
 /*Banner */
-/*.banner{
+.banner{
     background-image: url("../medios/banner.jpg");
     background-size: cover;
     height: 300px;
@@ -89,7 +88,7 @@ footer{
 
 
 /* apariencia home*/
-/*main section{
+main section{
     text-align: center;
     max-width: auto;
     margin: 0;
@@ -102,10 +101,10 @@ main h1{
     text-decoration: underline;
     text-align: center;
     color: #acc8cb;
-}*/
+}
 
 /* grilla en Grid*/
-/*.contenedor-grid-vivencias{
+.contenedor-grid-vivencias{
     width: 100%;
     height: 100%;
     gap: 5px; ;
@@ -164,11 +163,11 @@ main h1{
 .grid-texto3{
     grid-area: texto3;
     color: #acc8cb;
-}*/
+}
 
 
 /* Orden de las imagenes utilizando flexbox*/
-/*.galeria1 {
+.galeria1 {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -204,25 +203,25 @@ main h1{
     font-weight: bold;
     padding: 10px;
     font-family: "Poppins", sans-serif;
-}*/
+}
 
 /* margen de la frase*/
-/*.frase{
+.frase{
     padding: 20px;
     background-color: #13202a ;
-}*/
+}
 
 /* frase final: color y tamaño*/
-/*.frase p{
+.frase p{
     color:black;
     background-color:#73818c ;
     text-align: justify;
     font-size: 1rem;
-}*/
+}
 
 /*especificidad*/
 
-/*section h2{
+section h2{
     text-align: center;
     font-size: 2.5rem;
     text-decoration: underline;
@@ -261,11 +260,11 @@ footer p{
 
 footer section{
     color: #98D2C0;
-}*/
+}
 
 /* apariencia nuevas novedades del Mes*/
 
-/*.destacadas h2{
+.destacadas h2{
     text-align: center;
     color:#acc8cb;
     text-decoration:underline;
@@ -300,23 +299,23 @@ footer section{
 }
 
 /*Apariencia de Escuela*/
-/*.center{
+.center{
     text-align: center;
-}*/
+}
 
 /*Apariencia Nosotros*/
 
-/*.mainnosotros{
+.mainnosotros{
     max-width: auto;
              margin: 0;
              padding: 2rem;
 }
 .center{
     text-align: center;
-}*/
+}
 
     /*imagenes*/
-    /*.face{
+    .face{
         width: 50px;
     }
     .insta{
@@ -336,11 +335,11 @@ footer section{
         position: fixed;
         bottom: 30px;
         right: 10px;
-    }*/
+    }
 
     /*creacion de tabla de imagenes con informacion*/
 
-   /* main h2{
+    main h2{
         color: #acc8cb;
     }
 
@@ -392,7 +391,7 @@ footer section{
         }
     
         /* apariencia de contacto*/
-        /*.maincontacto{
+        .maincontacto{
              max-width: auto;
              margin: 0;
              padding: 2rem;
@@ -403,10 +402,10 @@ footer section{
              font-size: 2.5rem;
              margin-bottom: 2rem;
              color: #acc8cb;
-        }*/
+        }
 
         /* Sección de mapa */
-        /*section {
+        section {
             margin-bottom: 3rem;
             text-align: center;
         }
@@ -424,10 +423,10 @@ footer section{
              border: 0;
              border-radius: 12px;
              box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            }*/
+            }
             
             /* Formulario */
-            /*form {
+            form {
 
                 display: flex;
                 flex-direction: column;
@@ -472,8 +471,8 @@ footer section{
   font-family: "Poppins", sans-serif;
   color: #b6b2d4;
   background-color:#13202a ;
-}*/
-/*
+}
+
 .tituloHistoria {
   text-align: center;
   font-size: 3rem;
@@ -542,11 +541,11 @@ section img {
 
 .offcanvas-body .nav-link, .offcanvas-body .nav-link.active {
     color:#acc8cb
-}*/
+}
 
 /*MediaQ  para dispositivos moviles*/
 
-/*@media (max-width:500px){
+@media (max-width:500px){
     header {
         flex-direction: column;
          align-items: center;
@@ -582,9 +581,9 @@ section img {
 
     .banner {
       height: auto; /* deja que el contenido determine la altura */
-        /*padding: 30px 10px; 
+        padding: 30px 10px; /* espacio interno */
         text-align: center;
-        font-size: 1.2rem; 
+        font-size: 1.2rem; /* achica el texto */
         line-height: 1.4;
     }
 
@@ -679,10 +678,10 @@ section img {
     }
 
 
-}*/
+}
 
 /* MEDIA QUERY PARA TABLETS (501px A 1024px) */
-/*@media (min-width: 501px) and (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 1024px) {
 
     header {
         flex-direction: column;
@@ -796,9 +795,9 @@ section img {
         font-size: 1rem;
         text-align: justify;
     }
-}*/
+}
 /* MEDIA QUERY PARA NOTEBOOKS (1025px A 1440px) */
-/*@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     
     header {
         padding: 20px 50px;
@@ -899,4 +898,3 @@ section img {
         text-align: justify;
     }
 }
-*/

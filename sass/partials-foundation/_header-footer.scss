@@ -6,7 +6,7 @@
 // Header
 // ------------------------------
 header {
-  background-color: $color-terciario;
+  background-color: $color-header-footer;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: row;
@@ -14,9 +14,7 @@ header {
   align-items: center;
   font-family: $font-principal;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ 
 
   img {
     width: 50px;
@@ -27,21 +25,24 @@ header {
   .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: $color-principal;
+    color: $font-claro;
     text-decoration: none;
   }
 
   nav {
   width: 40%;
+  margin-right: 6px;
 
   }
 
   .menu {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  height: 20px;
+   list-style: none;
+   height: 20px;
+   flex-direction: row;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   height: 20px;
 
   
     ul {
@@ -53,7 +54,7 @@ header {
       }
       
       a { text-decoration: none;
-         color: $color-claro;
+         color: $font-claro;
           font-weight: bold;
           font-size: 1rem;
           transition: color 0.3s ease;
@@ -61,7 +62,7 @@ header {
         
         
         &:hover {
-          color: $color-verdoso2;
+          color: $font-claro;
         }
       }   
   }
@@ -71,24 +72,24 @@ header {
 // Footer
 // ------------------------------
 footer {
-  background-color: $color-terciario;
+  background-color: $color-header-footer;
   padding: 2rem;
-  color: $color-texto2;
+  color: $color-font-1;
   font-family: $font-principal;
   text-align: center;
 
   p {
     margin: 0;
     font-size: 1rem;
-    color: $color-texto2
+    color: $color-font-1
   }
 
   a {
-     color: white;
+     color:$color-font-menu;
     text-decoration: underline;
     
     &:hover {
-      color: $color-texto;
+      color: $color-font-2;
     }
   }
 }
