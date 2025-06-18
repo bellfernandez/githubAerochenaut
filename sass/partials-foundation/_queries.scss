@@ -75,27 +75,21 @@
     }
   }
 
- .contenedor-grid-vivencias {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+  .contenedor-grid-vivencias {
+      display: grid;
+      grid-template-areas:
+      "titulo1"
+      "texto1"
+      "img-1"
+      "img-2"
+      "texto2"
+      "img-3"
+      "texto3";
+      grid-template-columns: 1fr;
+      gap: 1rem;
 
-    h1 {
-      margin: 2rem 0;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    p {
-      font-size: 1rem;
-      text-align: justify;
-      color: black;
+      h1 {
+      margin: 2rem;
     }
   }
 
