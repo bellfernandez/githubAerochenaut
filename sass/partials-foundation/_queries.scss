@@ -1,193 +1,189 @@
 // foundation/_queries.scss
 @mixin mobile {
-  @media (min-width: 0px) and (max-width: 480px) {
-    * {
-      box-sizing: border-box;
-    }
+  @media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      overflow-x: hidden;  
-      font-size: 16px;
-    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 
     img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    header, nav {
-      width: 100%;
-      margin: 0;
-      padding: 0 10px;
-      box-sizing: border-box;
-    
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
-    }
-
-    header img {
       width: 40px;
       margin: 4px;
     }
+  }
 
-    .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 15px;  
-      width: 100%;
-      margin: 0;  
-    }
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
 
-    .menu li {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+
+    li {
       margin-left: 0;
-      width: 100%; 
-      word-wrap: break-word; 
-      text-align: center; 
-    }
-
-    main section {
-      padding: 1rem 0.5rem;
-      main section h1 {
-        margin: 2rem;
-      }
-    }
-
-    .banner {
-      height: auto;
-      padding: 30px 10px;
+      width: 100%;
+      word-wrap: break-word;
       text-align: center;
-      font-size: 1.2rem;
-      line-height: 1.4;
     }
+  }
 
-    .banner h1,
-    .banner p {
+  main section {
+    padding: 1rem 0.5rem;
+
+    h1 {
+      margin: 2rem;
+    }
+  }
+
+  .banner {
+    height: auto;
+    padding: 30px 10px;
+    text-align: center;
+
+    h1,
+    p {
       font-size: 1.3rem;
       padding: 0 10px;
-      word-wrap: break-word; 
       line-height: 1.4;
+      word-wrap: break-word;
     }
+  }
 
-    .contenedor-grid-vivencias {
-      grid-template-areas:
-        "titulo1"
-        "texto1"
-        "img-1"
-        "img-2"
-        "texto2"
-        "img-3"
-        "texto3";
-        grid-template-columns: 1fr ;
-        display: grid;
-        gap: 1rem;
+  .contenedor-grid-vivencias {
+    display: grid;
+    grid-template-areas:
+      "titulo1"
+      "texto1"
+      "img-1"
+      "img-2"
+      "texto2"
+      "img-3"
+      "texto3";
+    grid-template-columns: 1fr;
+    gap: 1rem;
 
-      h1{
-        margin: 2rem;
-      } 
+    h1 {
+      margin: 2rem;
     }
+  }
 
-    .galeria1 {
-      flex-direction: column;
-      gap: 1rem;
-    }
+  .galeria1 {
+    flex-direction: column;
+    gap: 1rem;
 
-    .galeria1 .item1 {
+    .item1 {
       width: 95%;
     }
+  }
 
-    .destacadas article {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
+  .destacadas article {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
-    .destacadas article .primervuelo,
-    .destacadas article .privado,
-    .destacadas article .instructor {
+    .primervuelo,
+    .privado,
+    .instructor {
       width: 100%;
       height: auto;
       margin-top: 2rem;
     }
+  }
 
-    iframe {
-      width: 100%;
-      height: 250px;
-    }
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
 
-    form {
-      padding: 1rem;
-      width: 100%;
-      font-size: 0.9rem;
-    }
+  form {
+    padding: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
 
-    form input,
-    form textarea,
-    form select {
+    input,
+    textarea,
+    select {
       font-size: 1rem;
     }
-
-    .historia img,
-    .fundador img,
-    .frasefinal img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto; 
-    }
-
-    .instructores {
-      align-items: center;
-      gap: 1rem;
-    }
-
-    article img,
-    section img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover; 
-    }
-
-    .tituloHistoria {
-      font-size: 2rem;
-    }
-
-    .titulocontacto {
-      font-size: 1.8rem;
-    }
-
-    .frase p {
-      font-size: 0.95rem;
-      text-align: justify;
-    }
-
-    .escuela .contenido-escuela {
-    flex-direction: column;
-    }
-
-    .flota p {
-      color: #01101b;
-      
-      img {
-       width: 100%;
-       height: auto;
-       object-fit: cover;
-      }
-    }
-
- 
   }
+
+  .historia img,
+  .fundador img,
+  .frasefinal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .instructores {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  article img,
+  section img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .tituloHistoria {
+    font-size: 2rem;
+  }
+
+  .titulocontacto {
+    font-size: 1.8rem;
+  }
+
+  .frase p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .escuela .contenido-escuela {
+    flex-direction: column;
+  }
+
+  .flota {
+    p {
+      color: #01101b;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
 }
 
 @mixin desktop {
