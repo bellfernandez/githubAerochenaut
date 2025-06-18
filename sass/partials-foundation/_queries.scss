@@ -59,7 +59,7 @@
     main section {
       padding: 1rem 0.5rem;
       main section h1 {
-        margin-bottom: 2rem;  
+        margin: 2rem;
       }
     }
 
@@ -88,9 +88,13 @@
         "texto2"
         "img-3"
         "texto3";
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      display: block;
+        grid-template-columns: 1fr ;
+        display: grid;
+        gap: 1rem;
+
+      h1{
+        margin: 2rem;
+      } 
     }
 
     .galeria1 {
