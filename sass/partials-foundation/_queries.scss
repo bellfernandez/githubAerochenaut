@@ -1,6 +1,6 @@
 // foundation/_queries.scss
 @mixin mobile {
-  @media (max-width: 500px) {
+  @media (min-width: 0px) and (max-width: 480px) {
     * {
       box-sizing: border-box;
     }
@@ -87,11 +87,12 @@
         "texto3";
       grid-template-columns: 1fr;
       grid-template-rows: auto;
+      display: block;
     }
 
     .galeria1 {
       flex-direction: column;
-      gap: 15px;
+      gap: 1rem;
     }
 
     .galeria1 .item1 {
@@ -101,15 +102,15 @@
     .destacadas article {
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 1rem;
     }
 
-    .primervuelo,
-    .privado,
-    .instructor {
-      width: 90%;
+    .destacadas article .primervuelo,
+    .destacadas article .privado,
+    .destacadas article .instructor {
+      width: 100%;
       height: auto;
-      padding: 1rem;
+    
     }
 
     iframe {
@@ -163,6 +164,10 @@
       font-size: 0.95rem;
       text-align: justify;
     }
+
+    .escuela .contenido-escuela {
+    flex-direction: column;
+  }
   }
 }
 
@@ -271,3 +276,132 @@
     }
 }
 
+@mixin tablet {
+  @media (min-width: 481px) and (max-width: 768px) {
+    html, body {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+
+    header img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    main section {
+      padding: 1.5rem;
+    }
+
+    .banner {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .banner h1,
+    .banner p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .contenedor-grid-vivencias {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "titulo1"
+        "texto1"
+        "img-1"
+        "img-2"
+        "texto2"
+        "img-3"
+        "texto3";
+    }
+
+    .galeria1 {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .galeria1 .item1 {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .destacadas article {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+
+    form {
+      padding: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .historia img,
+    .fundador img,
+    .frasefinal img {
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    article img,
+    section img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .tituloHistoria {
+      font-size: 2.2rem;
+    }
+
+    .titulocontacto {
+      font-size: 2rem;
+    }
+
+    .frase p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .escuela .contenido-escuela {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}

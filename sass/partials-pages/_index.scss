@@ -163,19 +163,16 @@ main {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    .galeria1 .item1 img {
-       transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
-      cursor: pointer;
-      }
-
-     .galeria1 .item1 img:hover {
-       transform: scale(1.05);
-       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-      }
-
     img {
       width: 100%;
       height: 180px;
+      transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
+      cursor: pointer;
+
+      &:hover {
+         transform: scale(1.05);
+         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
     }
 
     p {
@@ -272,7 +269,7 @@ main {
 
     img {
       width: 100%;
-      height: 180px;
+      height: auto;
       object-fit: cover;
       margin-top: 10px;
       padding: 0;

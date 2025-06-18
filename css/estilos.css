@@ -9,7 +9,7 @@ body {
   background-color: #13202a;
   color: #acc8cb;
   line-height: 1.6;
-  margin: 20px;
+  margin: 0px;
 }
 
 .contenedor {
@@ -17,7 +17,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: auto;
 }
 
 .titulo {
@@ -213,17 +212,15 @@ main section h2 {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.galeria1 .item1 .galeria1 .item1 img {
-  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
-  cursor: pointer;
-}
-.galeria1 .item1 .galeria1 .item1 img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
 .galeria1 .item1 img {
   width: 100%;
   height: 180px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+.galeria1 .item1 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .galeria1 .item1 p {
   background-color: #293c4b;
@@ -298,7 +295,7 @@ main section h2 {
 }
 .galeria .item img {
   width: 100%;
-  height: 180px;
+  height: auto;
   object-fit: cover;
   margin-top: 10px;
   padding: 0;
@@ -358,7 +355,6 @@ main section h2 {
 }
 
 .mainnosotros {
-  max-width: auto;
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #acc8cb;
