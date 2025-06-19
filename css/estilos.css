@@ -434,7 +434,7 @@ main section h2 {
 .flota p {
   text-align: center;
   font-size: 1.1rem;
-  color: black o !important;
+  color: black !important;
   margin-bottom: 3rem;
 }
 
@@ -459,12 +459,6 @@ main section h2 {
   object-fit: cover;
   display: block;
   border-radius: 10px;
-}
-.vehiculos .vehiculo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
 }
 .vehiculos .vehiculo .info {
   padding: 1.5rem;
