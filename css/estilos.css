@@ -741,6 +741,50 @@ main section h2 {
     height: auto;
     object-fit: cover;
   }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .formulario label,
+  .formulario p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+  }
+  .formulario input,
+  .formulario select,
+  .formulario textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .formulario input[type=radio] {
+    width: auto;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  .formulario textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  .formulario input[type=submit],
+  .formulario input[type=reset] {
+    background-color: #293c4b;
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem;
+    transition: background-color 0.3s ease;
+  }
+  .formulario input[type=submit]:hover,
+  .formulario input[type=reset]:hover {
+    background-color: rgb(22.974137931, 33.6206896552, 42.025862069);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
