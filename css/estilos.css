@@ -603,14 +603,17 @@ main section h2 {
     grid-template-columns: 1fr;
     gap: 1.2rem;
     padding: 1.2rem;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    overflow: visible;
   }
   .contenedor-grid-vivencias .grid-titulo1 {
     grid-area: titulo1;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.3;
     color: #ffffff;
     margin-bottom: 1rem;
+    padding: 0 0.5rem;
   }
   .contenedor-grid-vivencias .grid-texto1 {
     grid-area: texto1;
@@ -618,8 +621,9 @@ main section h2 {
     line-height: 1.6;
     color: #ffffff;
     text-align: justify;
-    margin: 0 0 1rem 0;
-    padding: 0 0.5rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0.8rem;
+    overflow: visible;
   }
   .contenedor-grid-vivencias .grid-img-1,
   .contenedor-grid-vivencias .grid-img-2,
@@ -650,7 +654,9 @@ main section h2 {
     line-height: 1.6;
     color: #ffffff;
     text-align: justify;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0.8rem;
+    overflow: visible;
   }
   .contenedor-grid-vivencias .grid-texto3 {
     grid-area: texto3;
@@ -658,7 +664,9 @@ main section h2 {
     line-height: 1.6;
     color: #ffffff;
     text-align: justify;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0.8rem;
+    overflow: visible;
   }
   .galeria1 {
     flex-direction: column;
