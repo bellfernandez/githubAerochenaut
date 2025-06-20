@@ -76,51 +76,52 @@
 
         <!--formulario mensaje-->
 
-        <form class="formulario" action="">
+        <section class="contacto">
+            <form class="formulario" action="">
+                <label for="Nombre"> Nombre</label>
+                <input type="text" name="nombre" id="Nombre" required>
 
-            <label for="Nombre"> Nombre</label>
-            <input type="text" name="nombre" id="Nombre" required>
+                <label for="Apellido"> Apellido</label>
+                <input type="text" name="apellido" id="Apellido">
 
-            <label for="Apellido"> Apellido</label>
-            <input type="text" name="apellido" id="Apellido">
+                <label for="Email"> Email</label>
+                <input type="email" name="email" id="email" placeholder=" ejemplo@correo.com">
 
-            <label for="Email"> Email</label>
-            <input type="email" name="email" id="email" placeholder=" ejemplo@correo.com">
+                <label for="celular">Celular</label>
+                <input type="number" name="celular" id="celular">
 
-            <label for="celular">Celular</label>
-            <input type="number" name="celular" id="celular">
+                <p>Mensaje</p>
+                <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
-            <p>Mensaje</p>
-            <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
-
-            <!--controles de Selección-->
-            <p>Acepta Términos y Condiciones</p>
-            <div class="radio-group">
-            <label for="Si">
-            <input type="radio" name="Terminos" id="Si" value="si"> Si
-            </label>
-            <label for="No">
-            <input type="radio" name="Terminos" id="No" value="no"> No
-            </label>
-            </div>
-
-            
-            <!--Menu desplegable de opciones de mensaje-->
-            <p>Información</p>
-            <label for="informacion">Información</label>
-            <select name="Informacion" id="informacion">
-                <option value="cursos">Cursos</option>
-                <option value="vuelos">Vuelos Bautismo</option>
-                <option value="clases">Clases</option>
-                <option value="precio">Informacion de precios</option>
-            </select>
+                <!--controles de Selección-->
+                <p>Acepta Términos y Condiciones</p>
+                <div class="radio-group">
+                    <label for="Si">
+                        <input type="radio" name="Terminos" id="Si" value="si"> Si
+                    </label>
+                    <label for="No">
+                        <input type="radio" name="Terminos" id="No" value="no"> No
+                    </label>
+                </div>
 
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+                <!--Menu desplegable de opciones de mensaje-->
+                <p>Información</p>
+                <label for="informacion">Información</label>
+                <select name="Informacion" id="informacion">
+                    <option value="cursos">Cursos</option>
+                    <option value="vuelos">Vuelos Bautismo</option>
+                    <option value="clases">Clases</option>
+                    <option value="precio">Informacion de precios</option>
+                </select>
 
 
-        </form>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+
+
+            </form>
+        </section>
     </main>
     <footer>
         <!--pie y cierre de página-->
