@@ -1,4 +1,6 @@
 // foundation/_queries.scss
+
+@use 'variables' as *;
 @mixin mobile {
   @media (min-width: 360px) and (max-width: 500px) {
     * {

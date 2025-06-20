@@ -21,3 +21,4 @@
 //media queries
 
 @use "partials-foundation/queries";
+@include queries.mobile;
