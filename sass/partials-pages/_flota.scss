@@ -12,7 +12,7 @@
 
   h2 {
     font-size: 2.5rem;
-    color: black !important;
+    color: $color-font-1 !important;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -59,6 +59,7 @@
         font-size: 1.3rem;
         color: $color-font-3 !important;
         margin-bottom: 0.5rem;
+        text-align: center;
       }
 
       p {
