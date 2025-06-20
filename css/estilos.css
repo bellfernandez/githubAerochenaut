@@ -484,54 +484,63 @@ main section h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
-.contacto form {
-  max-width: 600px;
+.contacto .formulario {
+  max-width: 800px;
   margin: 0 auto;
   background: antiquewhite;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.contacto form label {
+.contacto .formulario label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   font-weight: 600;
   color: #395266;
 }
-.contacto form input,
-.contacto form textarea {
+.contacto .formulario input,
+.contacto .formulario select,
+.contacto .formulario textarea {
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: 1.5rem;
   border: 1px solid #b2dfdb;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   color: #395266;
   transition: border-color 0.3s ease;
 }
-.contacto form input:focus,
-.contacto form textarea:focus {
+.contacto .formulario input:focus,
+.contacto .formulario select:focus,
+.contacto .formulario textarea:focus {
   outline: none;
   border-color: #395266;
 }
-.contacto form textarea {
-  resize: vertical;
-  min-height: 120px;
+.contacto .formulario input[type=radio] {
+  width: auto;
+  margin: 0 0.5rem 0 0.5rem;
 }
-.contacto form button {
-  background-color: #666;
-  color: #acc8cb;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+.contacto .formulario textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.contacto .formulario input[type=submit],
+.contacto .formulario input[type=reset] {
+  background-color: #293c4b;
+  color: antiquewhite;
+  font-weight: bold;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
   transition: background-color 0.3s ease;
 }
-.contacto form button:hover {
-  background-color: #395266;
+.contacto .formulario input[type=submit]:hover,
+.contacto .formulario input[type=reset]:hover {
+  background-color: rgb(22.974137931, 33.6206896552, 42.025862069);
 }
 
 @media (min-width: 360px) and (max-width: 500px) {
@@ -740,50 +749,6 @@ main section h2 {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-  }
-  .formulario label,
-  .formulario p {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 0.2rem;
-  }
-  .formulario input,
-  .formulario select,
-  .formulario textarea {
-    width: 100%;
-    padding: 0.6rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .formulario input[type=radio] {
-    width: auto;
-    margin: 0 0.5rem 0 0.5rem;
-  }
-  .formulario textarea {
-    resize: vertical;
-    min-height: 150px;
-  }
-  .formulario input[type=submit],
-  .formulario input[type=reset] {
-    background-color: #293c4b;
-    color: antiquewhite;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    padding: 0.6rem;
-    transition: background-color 0.3s ease;
-  }
-  .formulario input[type=submit]:hover,
-  .formulario input[type=reset]:hover {
-    background-color: rgb(22.974137931, 33.6206896552, 42.025862069);
   }
 }
 
