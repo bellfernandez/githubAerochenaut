@@ -151,7 +151,7 @@ main section h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  animation: kenburns-top-left 6s ease-out both;
+  animation: kenburns-top-left 8s ease-out both;
 }
 @keyframes kenburns-top-left {
   0% {
