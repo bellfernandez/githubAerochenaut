@@ -159,7 +159,7 @@ main section h2 {
     transform-origin: 16% 16%;
   }
   100% {
-    transform: scale(1.15) translate(-10px, -8px);
+    transform: scale(1) translate(-8px, -6px);
     transform-origin: top left;
   }
 }
