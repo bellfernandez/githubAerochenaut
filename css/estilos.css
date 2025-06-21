@@ -160,7 +160,7 @@ main section h2 {
     transform-origin: 16% 16%;
   }
   100% {
-    transform: scale3d(1.12, 1.12, 1) translate3d(-12px, -10px, 0);
+    transform: scale3d(1.07, 1.07, 1) translate3d(-10px, -8px, 0);
     transform-origin: top left;
   }
 }
