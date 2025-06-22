@@ -138,7 +138,7 @@ main section h2 {
 }
 
 .banner {
-  background-image: url("/githubAerochenaut/medios/banner.jpg");
+  background-image: url("../medios/banner.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
