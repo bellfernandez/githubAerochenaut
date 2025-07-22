@@ -83,52 +83,56 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </section>
-
-        <!--formulario mensaje-->
-
+        <!-- formulario de contacto -->
         <section class="contacto">
-            <form class="formulario" action="">
-                <label for="Nombre"> Nombre</label>
-                <input type="text" name="nombre" id="Nombre" required>
-
-                <label for="Apellido"> Apellido</label>
-                <input type="text" name="apellido" id="Apellido">
-
-                <label for="Email"> Email</label>
-                <input type="email" name="email" id="email" placeholder=" ejemplo@correo.com">
-
+            <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="formulario" action="">
+                <!-- Campo oculto que Netlify requiere -->
+                <input type="hidden" name="form-name" value="contacto" />
+        
+                <!-- Honeypot para evitar spam -->
+                <div style="display:none;">
+                    <label>Si estás vivo, dejalo vacío: <input name="bot-field" /></label>
+                </div>
+        
+                <!-- campos originales -->
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" id="Nombre" required />
+        
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="apellido" id="Apellido" />
+        
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="aerochenaut@gmail.com" required />
+        
                 <label for="celular">Celular</label>
-                <input type="number" name="celular" id="celular">
-
+                <input type="number" name="celular" id="celular" />
+        
                 <p>Mensaje</p>
                 <textarea name="Mensaje" id="mensaje" cols="30" rows="6"></textarea>
-
-                <!--controles de Selección-->
+        
+                <!-- términos y condiciones -->
                 <p>Acepta Términos y Condiciones</p>
                 <div class="radio-group">
                     <label for="Si">
-                        <input type="radio" name="Terminos" id="Si" value="si"> Si
+                        <input type="radio" name="Terminos" id="Si" value="si" /> Si
                     </label>
                     <label for="No">
-                        <input type="radio" name="Terminos" id="No" value="no"> No
+                        <input type="radio" name="Terminos" id="No" value="no" /> No
                     </label>
                 </div>
-
-
-                <!--Menu desplegable de opciones de mensaje-->
+        
+                <!-- menú desplegable -->
                 <label for="informacion">Información</label>
                 <select name="Informacion" id="informacion">
                     <option value="cursos">Cursos</option>
                     <option value="vuelos">Vuelos Bautismo</option>
                     <option value="clases">Clases</option>
-                    <option value="precio">Informacion de precios</option>
+                    <option value="precio">Información de precios</option>
                 </select>
-
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-
-
+        
+                <!-- botones -->
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <input type="reset" value="Borrar" />
             </form>
         </section>
     </main>
@@ -149,8 +153,9 @@
         </div>
 
         <p>Copyright © 2025 Escuela De Vuelo Aerochenaut</p>
-        <img class="what" src="../medios/logo-whatsapp.webp" alt="logo de WhatsApp, un globo de pensamiento verde, con un telefono blanco en el medio">
-
+        <a href="https://wa.me/2364598045" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+         <img class="what" src="./medios/logo-whatsapp.webp" alt="Logo de WhatsApp">
+        </a>
     </footer>
     <!--bootstrap de script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
